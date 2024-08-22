@@ -1,0 +1,28 @@
+.task-details-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
+}
+
+.task-details-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.task-details-container .task-details-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link-button {
+  color: #28a745;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
