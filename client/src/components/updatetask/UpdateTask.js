@@ -15,7 +15,7 @@ const UpdateTask = ({ updateTask }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/tasks/${id}`)
+    fetch(`https://tasksassignmentsystem-api.onrender.com/tasks/${id}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch task data');
@@ -44,7 +44,7 @@ const UpdateTask = ({ updateTask }) => {
       priority,
     };
 
-    fetch(`http://localhost:5000/tasks/${id}`, {
+    fetch(`https://tasksassignmentsystem-api.onrender.com/tasks/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(updatedTask),

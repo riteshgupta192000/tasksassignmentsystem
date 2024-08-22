@@ -16,7 +16,7 @@ const AddTask = ({ addTask }) => {
   
     const newTask = { title: taskTitle, description, assignee, dueDate, priority };
   
-    fetch('http://localhost:5000/tasks', {
+    fetch('https://tasksassignmentsystem-api.onrender.com/tasks', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newTask)

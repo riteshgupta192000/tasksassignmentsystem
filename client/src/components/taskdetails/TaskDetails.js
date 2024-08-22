@@ -8,7 +8,7 @@ const TaskDetails = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/tasks/${id}`)
+    fetch(`https://tasksassignmentsystem-api.onrender.com/tasks/${id}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
