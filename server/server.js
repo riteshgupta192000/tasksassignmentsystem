@@ -7,7 +7,9 @@ const PORT=5000;
 require("dotenv").config();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin:process.env.CLIENT_URL,
+}));
 
 mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
